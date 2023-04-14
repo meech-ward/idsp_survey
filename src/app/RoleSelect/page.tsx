@@ -19,12 +19,11 @@ export default function RoleSelect() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold">Role Select</h1>
-        <p className="text-2xl font-light">Select your role</p>
-      </div>
-      <div className="flex flex-col items-center justify-center gap-y-6">
+    <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+      <div className="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+
+        <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20 min-w-">
         <button
           onClick={() => selectRole("Student")}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -49,7 +48,8 @@ export default function RoleSelect() {
         >
           Other
         </button>
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
